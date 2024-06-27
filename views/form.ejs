@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 작성</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <style>
+        .form-title {
+            grid-template-columns: 2fr 8fr;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>글 작성</h1>
+            <form action="/post" method="post">
+                <div class="grid form-title">
+                    <select name="subject" id="" required>
+                        <option value="">주제 선택</option>
+                        <option value="자유">자유</option>
+                        <option value="맛집">맛집</option>
+                        <option value="공부">공부</option>
+                        <option value="고민">고민</option>
+                    </select>
+                    <input type="text" name="title" placeholder="제목" required>
+                </div>
+
+
+                <textarea name="content" rows="10" placeholder="내용 작성" required></textarea>
+
+                <input type="submit" value="등록하기">
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>

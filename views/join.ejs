@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 등록</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>회원 등록</h1>
+        <form action="/join" method="post">
+            <fieldset>
+                <legend>기본 정보</legend>
+                <div>
+                    아이디: <input type="text" name="id" required minlength="4" maxlength="10">
+                </div>
+                <div>
+                    비밀번호: <input type="password" name="pw" required minlength="4" maxlength="15">
+                </div>
+                <div>
+                    닉네임: <input type="text" name="nickname" required>
+                </div>
+                <div>
+                    이메일: <input type="email" name="email">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="등록하기">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
